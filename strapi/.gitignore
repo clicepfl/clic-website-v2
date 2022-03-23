@@ -112,3 +112,9 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+############################
+# Meilisearch
+############################
+# see https://github.com/clicepfl/clic-website-v2/issues/3
+core

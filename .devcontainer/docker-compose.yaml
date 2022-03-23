@@ -12,6 +12,10 @@ services:
       DATABASE_NAME: strapi_data
       DATABASE_USERNAME: strapi_user
       DATABASE_PASSWORD: strapi_pw
+      MEILI_PROTOCOL: http
+      MEILI_HOST: meilisearch
+      MEILI_MASTER_KEY: meili_master_key
+      MEILI_PORT: 7700
     volumes:
       - "..:/app"
     ports:
@@ -28,5 +32,16 @@ services:
     volumes:
       - "strapi-data:/var/lib/postgresql/data"
 
+  meilisearch:
+    image: getmeili/meilisearch
+    command: ./meilisearch
+    environment:
+      MEILI_MASTER_KEY: meili_master_key
+    volumes:
+      - "meilisearch-data:/data.ms"
+    ports:
+      - "7700:7700"
+
 volumes:
   strapi-data:
+  meilisearch-data:

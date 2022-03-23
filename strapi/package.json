@@ -11,10 +11,11 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.1.5",
-    "@strapi/plugin-users-permissions": "4.1.5",
     "@strapi/plugin-i18n": "4.1.5",
-    "pg": "8.6.0"
+    "@strapi/plugin-users-permissions": "4.1.5",
+    "@strapi/strapi": "4.1.5",
+    "pg": "8.6.0",
+    "strapi-plugin-meilisearch": "^0.6.2"
   },
   "contributors": [
     {

@@ -25,4 +25,4 @@ EXPOSE 1337
 
 # yarn is available in strapi/base
 # install dependencies and run in watch mode
-CMD yarn install && yarn develop
+CMD yarn install && yarn build && yarn develop
