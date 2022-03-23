@@ -1,0 +1,39 @@
+{
+  "name": "clic-website-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Back-end API service of the CLIC website software using Strapi headless content management system (CMS)",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.1.5",
+    "@strapi/plugin-users-permissions": "4.1.5",
+    "@strapi/plugin-i18n": "4.1.5",
+    "pg": "8.6.0"
+  },
+  "contributors": [
+    {
+      "name": "Alexandre Chau",
+      "email": "code@chau.moe",
+      "url": "https://github.com/dialexo"
+    },
+    {
+      "name": "Hugo El Guedj",
+      "email": "hugo.elguedj@epfl.ch",
+      "url": "https://github.com/s314cy"
+    }
+  ],
+  "strapi": {
+    "uuid": "8afaa912-f0c4-4fd2-9f66-da3151ff3473"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "AGPL-3.0-only"
+}

@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  strapi:
+    build:
+      context: ../strapi/.devcontainer
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: strapi-postgres
+      DATABASE_PORT: 5432
+      DATABASE_NAME: strapi_data
+      DATABASE_USERNAME: strapi_user
+      DATABASE_PASSWORD: strapi_pw
+    volumes:
+      - "..:/app"
+    ports:
+      - "1337:1337"
+    depends_on:
+      - strapi-postgres
+
+  strapi-postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: strapi_data
+      POSTGRES_USER: strapi_user
+      POSTGRES_PASSWORD: strapi_pw
+    volumes:
+      - "strapi-data:/var/lib/postgresql/data"
+
+volumes:
+  strapi-data:

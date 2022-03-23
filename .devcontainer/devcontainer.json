@@ -1,0 +1,14 @@
+{
+    "name": "clic-website-devcontainer",
+    // use docker-compose file in same directory to define all services
+    "dockerComposeFile": "docker-compose.yaml",
+    // connect shell to specified service
+    "service": "strapi",
+    // root directory inside container
+    "workspaceFolder": "/app",
+    // use login interactive shell
+    "userEnvProbe": "loginInteractiveShell",
+    // install extensions into devcontainer
+    "extensions": [
+    ]
+}
