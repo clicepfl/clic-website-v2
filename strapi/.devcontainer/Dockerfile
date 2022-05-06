@@ -1,5 +1,5 @@
-# use latest strapi base image
-FROM strapi/base
+# use lts node image as base
+FROM node:lts
 
 # install command-line utilities
 RUN apt-get update && apt-get install -y \
