@@ -1,4 +1,4 @@
-export default function Title({ text }: { text?: string }) {
+export default function Title({ text }: { text: string }) {
   return (
     <div className="flex items-center">
       <div className="bg-blue-950 w-10 h-0.5 mr-2" />
