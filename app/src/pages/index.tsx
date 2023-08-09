@@ -1,9 +1,9 @@
-import Title from "@/components/Title";
+import Title from "@/components/title";
 
 export default function Home() {
   return (
     <>
-      <Title></Title>
+      <Title text="title"></Title>
     </>
   );
 }
