@@ -7,17 +7,14 @@ export default function Title({
   dark?: boolean;
   textSize?: string;
 }) {
-  var linesClassNames = "w-10 h-0.5 " + (dark ? "bg-blue-950" : "bg-white");
+  const linesClassNames = `w-10 h-0.5 ${dark ? "bg-blue-950" : "bg-white"}`;
 
   return (
     <div className="flex items-center">
       <div className={linesClassNames} />
       <h1
         className={
-          "uppercase font-mono font-bold mx-2 " +
-          textSize +
-          " " +
-          (dark ? "text-blue-950" : "text-white")
+          `uppercase font-mono font-bold mx-2 ${textSize} ${dark ? "text-blue-950" : "text-white"}`
         }
       >
         {text}
