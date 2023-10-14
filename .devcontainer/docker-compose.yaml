@@ -61,6 +61,8 @@ services:
       - type: bind
         source: ../app
         target: /app
+    ports:
+      - 8000:3000
 
 volumes:
   # Persist strapi database
