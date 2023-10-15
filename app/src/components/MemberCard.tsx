@@ -1,3 +1,5 @@
+"use client";
+
 import { strapiImageLoader } from "@/loader";
 import {
   ApiAssociationMembershipAssociationMembership,

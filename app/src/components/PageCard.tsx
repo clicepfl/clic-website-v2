@@ -1,3 +1,5 @@
+"use client";
+
 import { strapiImageLoader } from "@/loader";
 import arrowIcon from "assets/arrow_icon.svg";
 import Image from "next/image";
