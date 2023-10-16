@@ -2,9 +2,9 @@
 
 import { strapiImageLoader } from "@/loader";
 import {
-  ApiAssociationMembershipAssociationMembership,
+  ApiCommissionMembershipCommissionMembership,
   ApiMemberMember,
-  ApiMembershipMembership,
+  ApiPoleMembershipPoleMembership,
 } from "@/types/generated/contentTypes";
 import defaultIcon from "assets/default_user_icon.svg";
 import Image from "next/image";
@@ -15,8 +15,8 @@ export default function MemberCard({
 }: {
   member: ApiMemberMember;
   membership?:
-    | ApiAssociationMembershipAssociationMembership
-    | ApiMembershipMembership;
+    | ApiPoleMembershipPoleMembership
+    | ApiCommissionMembershipCommissionMembership;
 }) {
   const pictureUrl = member.attributes.picture?.data?.attributes?.url;
 
