@@ -1,5 +1,5 @@
+import SVG from "./SVG";
 import clicArrow from "assets/clic_arrow.svg";
-import Image from "next/image";
 import Link from "next/link";
 
 function Entry({ title, href }: { title: string; href: string }) {
@@ -16,13 +16,8 @@ function Entry({ title, href }: { title: string; href: string }) {
 export default function NavigationBar() {
   return (
     <div className="w-full h-16 z-40 bg-slate-700 flex px-4 justify-between items-center">
-      <Link className="w-10 h-10 relative" href="/">
-        <Image
-          className="object-cover text-white"
-          fill
-          alt="Clic"
-          src={clicArrow}
-        />
+      <Link href="/">
+        <SVG svg={clicArrow} className="w-10 h-10 relative" />
       </Link>
       <div className="flex gap-4">
         <Entry title="L'Association" href="/" />
