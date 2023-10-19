@@ -18,7 +18,12 @@ export default async function EventsGrid() {
 
   return (
     <div className="p-10 flex flex-col items-center">
-      <Title text="Events" textSize="text-3xl" dark={false} />
+      <Title
+        text="Events"
+        textSize="text-5xl font-bold"
+        lineSize="w-24 h-1"
+        dark={false}
+      />
       <div className="grid grid-cols-3 mt-6 gap-10">
         {events.data.map((e) => (
           <EventCard id={e.id} vertical />

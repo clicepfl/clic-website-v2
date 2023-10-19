@@ -2,12 +2,14 @@ export default function Title({
   text,
   dark = true,
   textSize = "text-2xl",
+  lineSize = "w-10 h-0.5",
 }: {
   text: string;
   dark?: boolean;
   textSize?: string;
+  lineSize?: string;
 }) {
-  const linesClassNames = `w-10 h-0.5 ${dark ? "bg-blue-950" : "bg-white"}`;
+  const linesClassNames = `${lineSize} ${dark ? "bg-blue-950" : "bg-white"}`;
 
   return (
     <div className="flex items-center justify-center">
