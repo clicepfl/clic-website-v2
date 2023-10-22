@@ -11,7 +11,9 @@
   "dependencies": {
     "next": "13.4.12",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "strapi-sdk-js": "^2.3.3",
+    "typescript": "5.0.4"
   },
   "devDependencies": {
     "@types/node": "20.4.5",
