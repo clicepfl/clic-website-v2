@@ -5,7 +5,7 @@ import { ApiPoleMembershipPoleMembership } from "@/types/generated/contentTypes"
 
 export default async function CommitteeDisplay() {
   const members = await strapi.find<ApiPoleMembershipPoleMembership[]>(
-    "association-memberships",
+    "pole-memberships",
     {
       populate: ["member", "member.picture"],
       filters: { level: "Comité" },

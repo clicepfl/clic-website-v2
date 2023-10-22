@@ -1,3 +1,4 @@
+import CommitteeDisplay from "@/components/CommitteeDisplay";
 import EventsGrid from "@/components/EventsGrid";
 import NewsGrid from "@/components/NewsGrid";
 import SVGMask from "@/components/SVG";
@@ -49,6 +50,7 @@ export default function Home() {
       <Networks />
       <EventsGrid />
       <NewsGrid />
+      <CommitteeDisplay />
     </div>
   );
 }
