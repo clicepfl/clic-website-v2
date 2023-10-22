@@ -1,4 +1,5 @@
 import EventsGrid from "@/components/EventsGrid";
+import NewsGrid from "@/components/NewsGrid";
 import SVGMask from "@/components/SVG";
 import background from "assets/background.svg";
 import clicLogo from "assets/clic_logo.svg";
@@ -19,7 +20,7 @@ function Networks() {
   }
 
   return (
-    <div className="flex p-4 mt-6 gap-6">
+    <div className="flex p-4 mt-6 mb-10 gap-6">
       <Network href="https://github.com/clicepfl" svg={githubLogo} />
       <Network href="https://www.instagram.com/clicepfl/" svg={instagramLogo} />
       <Network href="https://t.me/clicnews" svg={telegramLogo} />
@@ -47,6 +48,7 @@ export default function Home() {
       />
       <Networks />
       <EventsGrid />
+      <NewsGrid />
     </div>
   );
 }

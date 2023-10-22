@@ -8,12 +8,9 @@ export default async function EventsGrid() {
     "events",
     {
       fields: ["event_date"],
+      pagination: { start: 0, limit: 3 },
+      sort: "event_date:desc",
     }
-  );
-  events.data.sort(
-    (a, b) =>
-      new Date(a.attributes.event_date as string).getTime() -
-      new Date(b.attributes.event_date as string).getTime()
   );
 
   return (
